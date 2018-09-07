@@ -41,7 +41,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, '{
  
   ]
 }');
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('apisecret: a83dd8f6cf1c4513b0c4597a95981d9a','apikey: l7xxd24fc01c90604192b25c79939c9e633d','Content-Type: application/json'));
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('apisecret: XXXX','apikey: XXXXXX','Content-Type: application/json'));
 $response = curl_exec($ch);
 curl_close($ch);
 $data = json_decode($response,TRUE);
