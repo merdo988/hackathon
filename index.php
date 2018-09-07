@@ -7,7 +7,7 @@ $ch = curl_init();
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, FALSE);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('apisecret: a83dd8f6cf1c4513b0c4597a95981d9a','apikey: l7xxd24fc01c90604192b25c79939c9e633d'));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('apisecret: XXXXXXX','apikey: XXXXXXX'));
     $response = curl_exec($ch);
     curl_close($ch);
 $data = json_decode($response, true);
